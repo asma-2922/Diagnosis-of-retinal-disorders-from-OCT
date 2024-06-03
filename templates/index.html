@@ -1,0 +1,29 @@
+{% extends "import.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="upload-section text-center">
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <label for="imageUpload" class="upload-label">
+                Choose Image <i class="fas fa-upload"></i>
+            </label>
+            <input type="file" name="file" class="inputfile" id="imageUpload" accept=".png, .jpg, .jpeg" style="display:none;">
+        </form>
+    </div>
+
+    <div class="image-section text-center" style="display:none;">
+        <img id="imagePreview" class="img-responsive img-thumbnail" style="max-width: 15%;" src="#" alt="Uploaded Image">
+        <button type="button" class="btn-predict btn-lg mt-3" id="btn-predict">Diagnose</button>
+    </div>
+
+    <div class="result-section text-center" style="display:none;">
+        <div class="result-content">
+            <h4 id="result"><span></span></h4>
+            <p id="description" class="description"></p>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+</div>
+
+{% endblock %}

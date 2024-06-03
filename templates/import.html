@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diagnosis of Retinal Disorder from OCT Scan</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Diagnosis of retinal disorder from OCT scan</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center mt-5">
+            <div class="row">
+                <div class="col-md-3 disease-info">
+                    <img src="{{ url_for('static', filename='CNV.png') }}" alt="Choroidal Neovascularization" class="img-fluid">
+                    <h4>Choroidal Neovascularization</h4>
+                </div>
+                <div class="col-md-3 disease-info">
+                    <img src="{{ url_for('static', filename='DME.png') }}" alt="Diabetic Macular Edema" class="img-fluid">
+                    <h4>Diabetic Macular Edema</h4>
+                </div>
+                <div class="col-md-3 disease-info">
+                    <img src="{{ url_for('static', filename='Drusen.png') }}" alt="Drusen" class="img-fluid">
+                    <h4>Drusen</h4>
+                </div>
+                <div class="col-md-3 disease-info">
+                    <img src="{{ url_for('static', filename='Normal.png') }}" alt="Normal Retina" class="img-fluid">
+                    <h4>Normal Retina</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

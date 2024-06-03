@@ -1,0 +1,116 @@
+/* Base Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #90AEAD;  /* Pleasant faded teal as general background */
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.header {
+    background-color: #244855; /* Deep blue for header */
+    color: white;
+    padding: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section {
+    padding: 20px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload-label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #874F41; /* Earthy brown from the new palette for 'Choose Image' button */
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.upload-label:hover, .upload-label:focus {
+    background-color: #6E392F; /* Slightly darker brown for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-thumbnail {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 15%;  /* Reducing the size further */
+    max-height: 50vh;  /* Adding a max-height constraint */
+    display: block;
+    margin: 10px auto;  /* Centering the image horizontally and adding some margin for spacing */
+}
+
+.btn-predict {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #874F41; /* Earthy brown from the new palette */
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-predict:hover {
+    background-color: #6E392F;  /* Slightly darker shade for hover effect */
+}
+
+/* Result section with light cream background */
+.result-section {
+    background: #FBE9D0; /* Light cream background for the result section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 700px; /* Decrease the width of the result section */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-content {
+    padding: 10px;
+}
+
+.description {
+    font-size: 1.2em; /* Increased font size for descriptions */
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* Adjust the background color if needed */
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* Center the navigation items horizontally */
+    align-items: center; /* Center the navigation items vertically */
+}
+
+.navbar-brand {
+    font-size: 2.0em; /* Increased font size for visibility */
+    color: white; /* Set text color, adjust if necessary */
+    text-align: center;
+}
